@@ -1,0 +1,21 @@
+using images as submit button:-
+
+<INPUT TYPE="IMAGE" SRC="butup.gif" ALT="Submit button">
+
+or
+
+<A HREF="javascript:document.myform.submit()" 
+onmouseover="document.myform.sub_but.src='butdown.gif'" 
+onmouseout="document.myform.sub_but.src='butup.gif'" 
+onclick="return val_form_this_page()">
+
+<IMG SRC="butup.gif" 
+WIDTH="143" HEIGHT="39" BORDER="0" ALT="Submit this form" 
+NAME="sub_but">
+
+</A>
+
+
+
+site:-  www.webdevelopersnotes.com
+

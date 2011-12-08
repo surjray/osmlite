@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>The Login Page: OSMlite.com</title>
+<script language="JavaScript">
+
+function myMethod()
+{
+  document.getElementById("section1").style.visibility="hidden";
+  document.getElementById("section2").style.visibility="hidden";
+  document.login.eid.focus();
+}
+
+function validate()
+{
+  var u_id = document.login.eid.value;
+  var pwd = document.login.password.value;
+
+  if(u_id == "")
+  {
+    return false
+  }
+  if(pwd == "")
+  {
+    return false
+  }
+  return true
+}
+
+function check1()
+{
+  var u_id = document.login.eid.value;
+
+  if(u_id == "")
+  {
+    document.getElementById("section1").style.visibility="visible";
+
+  }
+  else
+    document.getElementById("section1").style.visibility="hidden";
+}
+
+function check2()
+{
+  var pwd = document.login.password.value;
+
+  if(pwd == "")
+  {
+    document.getElementById("section2").style.visibility="visible";
+
+  }
+  else
+    document.getElementById("section2").style.visibility="hidden";
+}
+
+</script>
+</head>
+<center><body bgcolor="white" onLoad="myMethod();">
+<form name="login" onSubmit="return validate()" method="POST" action="LoginEmployee.jsp">
+<font color="#9933CC" face="Arial, Helvetica, sans-serif">
+<!--<table border="0" align="left">
+<tr>
+<td rowspan="3">
+<img src="osm_logo.png" border="0" align="left" width="110" height="110" />
+</td>
+<td>&nbsp;
+
+</td>
+<td>&nbsp;</td>
+
+<td>&nbsp;
+
+</td>
+</tr>
+<tr>
+<td>
+<font face="Times New Roman, Times, serif" color="#000000">
+<h2>Welcome! to OSMlite.com</h2>
+</font>
+</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+
+</tr>
+<tr>
+<td>
+<font face="Times New Roman, Times, serif" color="#000000">
+<b> [ </b> <a href="registration.html"><b> Register</b></a> <b>]</b>
+</font>
+</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<br><br><br><br><br><br><br><hr>
+-->
+<marquee bgcolor="#CCCCCC">
+<br>
+<font color="#9933FF">
+<h1><u>Employee Login Page</u></h1>
+</font>
+<br>
+</marquee>
+<h2><u>Enter The Username & Password</u>:</h2>
+<b>User-id:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" name="eid" onBlur="check1()"><br>
+<font color="red">
+<div id="section1"><b>This field can not be left blank!</b></div>
+</font>
+
+<b>Password:</b>&nbsp&nbsp <input type="password" name="password" onBlur="check2()">
+<br>
+<font color="red">
+<div id="section2"><b>This field can not be left blank!</b></div>
+</font>
+<br>
+<input type="submit" value="Login" name="login">
+<br><br><br><br>
+<div id="footer">
+<center>
+<a href="Login.html" style="color:#CC6600" onMouseOver="style='text-decoration:underline; color:#FF6600; font-style:italic'" onMouseOut="style='text-decoration:none; color:#CC6600'"><b>Back</b></a>
+</center>
+</div>
+</font>
+</form>
+</body>
+</center>
+</html>

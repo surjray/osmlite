@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Employee Registration: OSMLite.com</title>
+<link rel="stylesheet" href="sb_Styles-V1.1.css" type="text/css"/>
+
+<script language="JavaScript">
+
+function myMethod()
+{
+  document.getElementById("section1").style.visibility="hidden";
+  document.getElementById("section2").style.visibility="hidden";
+  document.getElementById("section3").style.visibility="hidden";
+  //document.getElementById("section4").style.visibility="hidden";
+  //document.registration.sub.disabled = true;
+  document.empReg.fname.focus();
+}
+
+function checkEmail()
+{
+  var indexin = document.empReg.email.value.indexOf("@");
+  var index = document.empReg.email.value.indexOf(".");
+
+  if(indexin == -1)
+    {
+      document.getElementById("section1").style.visibility="visible";
+      document.empReg.email.select()
+	  document.empReg.email.focus()
+      alert("Please enter a valid e-mail id!!!")
+    }
+  else if(index == -1)
+    {
+      document.getElementById("section1").style.visibility="visible";
+      document.empReg.email.select()
+	  document.empReg.email.focus()
+      alert("Please enter a valid e-mail id!!!")
+    }
+  else
+  {
+      document.getElementById("section1").style.visibility="hidden";
+  }
+}
+
+function checkNum()
+{
+  var pinno = document.empReg.pin.value;
+  var ph_no = document.empReg.pnumber.value;
+
+  if(isNaN(ph_no))
+  {
+    document.getElementById("section2").style.visibility="visible";
+  }
+  if(isNaN(ph_no) == false)
+  {
+    document.getElementById("section2").style.visibility="hidden";
+  }
+  if(isNaN(pinno))
+  {
+    document.getElementById("section3").style.visibility="visible";
+  }
+  if(isNaN(pinno) == false)
+  {
+    document.getElementById("section3").style.visibility="hidden";
+  }
+
+}
+
+function validate()
+    {
+      var indexin = document.empReg.email.value.indexOf("@");
+	  var index = document.empReg.email.value.indexOf(".");
+      var f_name = document.empReg.fname.value;
+      var l_name = document.empReg.lname.value;
+      var pswd1 = document.empReg.password1.value;
+      var pswd2 = document.empReg.password2.value;
+      var ph_no = document.empReg.pnumber.value;
+      var addr = document.empReg.address1.value;
+      var c = document.empReg.country.value;
+      var s = document.empReg.state.value;
+      var ci = document.empReg.city.value;
+      var pinno = document.empReg.pin.value;
+      var u_id = document.empReg.uid.value;
+      var email_id = document.empReg.email.value;
+	  var url = document.empReg.url.value;
+
+      if(indexin == -1)
+       {
+         alert("Please enter a valid e-mail id")
+         return false
+       }
+	  if(index == -1)
+       {
+         alert("Please enter a valid e-mail id")
+         return false
+       }
+      if(f_name.length > 10)
+       {
+         alert("Please enter a name less than 10 letters")
+         return false
+       }
+      if(f_name == "")
+       {
+         alert("Please enter your first name")
+         return false
+       }
+      if(l_name == "")
+       {
+          alert("Please enter your last name")
+          return false
+       }
+      if(u_id == "")
+	   {
+	  	      alert("Please enter your User-id")
+	  	      return false
+       }
+      if(pswd1 == "")
+       {
+           alert("Please enter the password")
+           return false
+       }
+      if(pswd2 == "")
+	   {
+	       alert("Please re-enter the password")
+	       return false
+       }
+      if(pswd1 != pswd2)
+	   {
+	  	   alert("Two passwords entered by you do not match! Please check...")
+	  	   return false
+       }
+      if(ph_no == "")
+       {
+          alert("Please enter your phone number")
+          return false
+       }
+      if(isNaN(ph_no))
+	   {
+	      alert("Phone number must be numeric")
+	      return false
+       }
+      if(addr == "")
+       {
+          alert("Please enter your address")
+          return false
+       }
+      if(c == "")
+       {
+          alert("Please enter your country")
+          return false
+       }
+      if(s == "")
+       {
+          alert("Please enter your state")
+          return false
+       }
+      if(ci == "")
+       {
+          alert("Please enter your city")
+          return false
+       }
+      if(pinno == "")
+       {
+          alert("Please enter the PIN NUMBER")
+          return false
+       }
+      if(isNaN(pinno))
+	   {
+	      alert("Please enter a valid pin number!")
+	      return false
+       }
+
+      if(email_id == "")
+	   {
+	      alert("Please enter your email-id")
+	      return false
+       }
+	   if(url == "")
+       {
+          alert("Please enter the URL")
+          return false
+       }
+
+   return true
+    }
+</script>
+</head>
+
+<body onLoad="myMethod();">
+<form name="empReg" method="post" action="EmployeeRegistration.jsp" onsubmit="return validate();">
+<div id="header"></div>
+<hr>
+<font color="#9933CC" face="Arial, Helvetica, sans-serif">
+<center>
+<font color="#000000" face="Tahoma">
+<h2><u>Please Fill Up The Following Form</u></h2>
+</font>
+</center>
+
+<marquee bgcolor="#CCCCCC">
+<font color="#9966FF" size="3">
+<b>*<u>All fields are necessary</u>*</b>
+</font>
+<br>
+</marquee><br><br>
+<fieldset>
+<legend><font color="#CC6600" size="3"><b>OSMlite Employee Details</b></font></legend>
+<br>
+<b>First Name : </b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>Middle Name : </b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>Last Name : </b><br>
+<input type="text" name="fname">&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" name="mname">&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" name="lname"><br><br>
+<b>Email-id : </b><br>
+<input type="text" size="40" name="email" onBlur="checkEmail()">
+
+<font color="red">
+<div id="section1"><b>Please enter a valid e-mail id!!!</b></div>
+</font>
+
+<b>Enter OSMlite Employee-id : </b><br>
+<input type="text" size="35"  name="uid"><br><br>
+<b>Enter Your Password : </b><br>
+<input type="password" size="30"  name="password1"><br><br>
+<b>Re-enter Your Password : </b><br>
+<input type="password" size="30" name="password2"><br><br>
+<b>Select a category : </b> &nbsp;&nbsp;&nbsp;
+<select name="category">
+<option select="selected" value="Admin">Administrator</option>
+<option value="Sales Manager">Sales Manager</option>
+<option value="Accounts Manager">Accounts Manager</option>
+</select><br><br>
+<b>Phone Number : </b><br>
+<input type="text" size="25" name="pnumber" onBlur="checkNum()">
+
+<font color="red">
+<div id="section2"><b>Phone number must contain a numeric value!!!</b></div>
+</font>
+<b>Address : </b><input type="text" size="60" name="address1"><br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" size="60" name="address2"><br><br>
+<b>Country : </b><input type="text" size="20" name="country"><br><br>
+<b>State : </b><input type="text" size="25" name="state"><br><br>
+<b>City : </b><input type="text" size="20" name="city"><br><br>
+<b>Pin Code : </b><input type="text" size="15" name="pin" onBlur="checkNum()"><br><br>
+<b>Page URL : </b><input type="text" size="20" name="url">
+<font color="red">
+<div id="section3"><b>Please enter a valid Pin number!!!</b></div>
+</font>
+</fieldset>
+<br>
+<hr>
+<input type="submit" name="sub" value="Register">&nbsp&nbsp
+<input type="reset" value="Clear" onClick="myMethod()"><br>
+<hr>
+</form>
+</body>
+</html>

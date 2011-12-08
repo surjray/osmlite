@@ -1,0 +1,130 @@
+<html>
+<head>
+<title>Change Phone Number:OSMlite.com</title>
+<script language="JavaScript">
+
+function myMethod()
+{
+  document.getElementById("section1").style.visibility="hidden";
+  document.getElementById("section2").style.visibility="hidden";
+  document.getElementById("section3").style.visibility="hidden";
+  document.changePhone.uid.focus();
+}
+
+function validate()
+{
+  var u_id = document.changePhone.uid.value;
+  var phno1 = document.changePhone.phone1.value;
+  var phno2 = document.changePhone.phone2.value;
+
+  if(u_id == "")
+  {
+    return false
+  }
+  if(phno1 == "")
+  {
+    return false
+  }
+  if(isNaN(phno1))
+  {
+    alert("This must contain a numeric value")
+    return false
+  }
+  if(phno2 == "")
+  {
+    return false
+  }
+  if(isNaN(phno2))
+  {
+    alert("This must contain a numeric value")
+    return false
+  }
+
+return true
+
+}
+
+function check1()
+{
+  var u_id = document.changePhone.uid.value;
+
+  if(u_id == "")
+  {
+    document.getElementById("section1").style.visibility="visible";
+  }
+  else
+  {
+    document.getElementById("section1").style.visibility="hidden";
+  }
+
+}
+
+function check2()
+{
+  var phno1 = document.changePhone.phone1.value;
+
+  if(isNaN(phno1))
+  {
+    alert("This must contain a numeric value")
+    document.changePhone.phone1.select();
+  }
+  if(phno1 == "")
+  {
+    document.getElementById("section2").style.visibility="visible";
+  }
+  else
+  {
+    document.getElementById("section2").style.visibility="hidden";
+  }
+}
+
+function check3()
+{
+  var phno2 = document.changePhone.phone2.value;
+
+  if(isNaN(phno2))
+  {
+    alert("This must contain a numeric value")
+    document.changePhone.phone2.select();
+  }
+  if(phno2 == "")
+  {
+    document.getElementById("section3").style.visibility="visible";
+  }
+  else
+  {
+    document.getElementById("section3").style.visibility="hidden";
+  }
+}
+
+</script>
+</head>
+
+<body bgcolor="white" onLoad="myMethod();">
+<form name="changePhone" onSubmit="return validate()" action="ChangeEmpPhone.jsp" method="post">
+<font color="#9933CC" face="Arial, Helvetica, sans-serif">
+<center>
+<font color="#000000" face="Times New Roman, Times, serif">
+<h1><u>Change Phone Number</u></h1>
+</font>
+</center>
+<hr><br>
+<b>Enter OSMlite Employee-id: </b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" name="uid" onBlur="check1()"><br>
+<font color="red">
+<div id="section1"><b>This field can not be left blank.</b></div>
+</font>
+<b>Enter current Phone number: </b>&nbsp&nbsp<input type="text" name="phone1" onBlur="check2()"><br>
+<font color="red">
+<div id="section2"><b>This field can not be left blank.</b></div>
+</font>
+<b>Enter new Phone number: </b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="phone2" onBlur="check3()"><br>
+<font color="red">
+<div id="section3"><b>This field can not be left blank.</b></div>
+</font>
+<br><br><hr><br>
+<input type="submit" name="sub" value="Change Phone Number"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="reset" name="clr" value="Clear" onClick="myMethod()"><br><br><hr>
+</font>
+</form>
+</body>
+</html>

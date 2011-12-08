@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Give your feedback</title>
+<link rel="stylesheet" href="sb_Styles11.css" type="text/css"/>
+<script language='javascript'>
+function verifyMe(){
+var msg='';
+
+if(document.getElementById('name').value==''){
+	msg+='- Name\n\n';}
+
+var email=document.getElementById('email').value;
+if(!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))){
+msg+='- Invalid Email Address: '+email+'\n\n';}
+
+if(document.getElementById('email').value==''){
+	msg+='- Email\n\n';}
+
+if(document.getElementById('city').value==''){
+	msg+='- City\n\n';}
+
+if(document.getElementById('country').value==''){
+	msg+='- Country\n\n';}
+
+var ph_no=document.getElementById('phone').value;
+if(ph_no!='' && isNaN(ph_no)){
+	msg+='- Phone\n\n';}
+
+if(!document.getElementById('fb_type[0]').checked && !document.getElementById('fb_type[1]').checked && !document.getElementById('fb_type[2]').checked && !document.getElementById('fb_type[3]').checked && !document.getElementById('fb_type[4]').checked && !document.getElementById('fb_type[5]').checked){
+msg+='- Feedback Type\n\n';}
+
+if(document.getElementById('feedback').value==''){
+	msg+='- Feedback\n\n';}
+
+if(msg!=''){
+	alert('The following fields are empty or invalid:\n\n'+msg);
+	return false
+}else{
+	return true }
+
+}
+</script>
+<style type="text/css">
+<!--
+.style1 {font-family: Verdana, Arial, Helvetica, sans-serif}
+-->
+</style>
+</head>
+<body>
+<div id="header"></div>
+<DIV ALIGN="CENTER" style="font-weight:normal"><BR>
+    <TABLE WIDTH="70%" BORDER="0" ALIGN="CENTER" CELLPADDING="4">
+      <TR>
+        <TD BGCOLOR="#F4FBFF" STYLE="border:1px solid #C9EBFF;"><div align="center"><STRONG>Send
+        us Your Feedback</STRONG></div></TD>
+      </TR>
+		<TR><TD><div align="justify">We
+		  thank <span class="style1"></span>you for visiting OSMlite.com - India's largest online B2C
+		  marketplace.<BR>
+		  <BR />
+		  Valuable feedback from our visitors has helped us to improve our site
+		  and be amongst the most visited business site of India. We look forward
+		  to your contribution in making <B>OSMlite.com </B>a site, that can
+		  best serve your <B>business</B> needs.<BR>
+		  <BR />
+		  Kindly fill out the following feedback form to tell us about your
+		  views, comments, suggestions &amp; complaints, and we, at <B>OSMlite.com,</B> promise you better content &amp; services, always.
+		  </div></TD></TR>
+		</TABLE>
+<form name='Feedback' action='Feedback.jsp' method='POST' enctype='application/x-www-form-urlencoded' onsubmit='return verifyMe();'>
+<table class='table_form_1' id='table_form_1' cellspacing='10'>
+	<tr>
+		<td class='ftbl_row_1'  align='right'><LABEL for='name' ACCESSKEY='1' ><b style='color:red'>*</b>Name
+		</LABEL></td>
+		<td class='ftbl_row_1a'  align='left'><input type='text' name='name' id='name' size='45' value=''>
+		</td>
+	</tr>
+	<tr>
+		<td class='ftbl_row_2'  align='right'><LABEL for='email' ACCESSKEY='2' ><b style='color:red'>*</b>Email
+		</LABEL></td>
+		<td class='ftbl_row_2a'  align='left'><input type='text' name='email' id='email' size='45' value=''>
+		</td>
+	</tr>
+	<tr>
+		<td class='ftbl_row_1'  align='right'><LABEL for='city' ACCESSKEY='3' ><b style='color:red'>*</b>City
+		</LABEL></td>
+		<td class='ftbl_row_1a'  align='left'><input type='text' name='city' id='city' size='45' value=''>
+		</td>
+	</tr>
+	<tr>
+		<td class='ftbl_row_2'  align='right'><LABEL for='country' ACCESSKEY='4' ><b style='color:red'>*</b>Country
+		</LABEL></td>
+		<td class='ftbl_row_2a'  align='left'><input type='text' name='country' id='country' size='45' value=''>
+		</td>
+	</tr>
+	<tr>
+		<td class='ftbl_row_1'  align='right'><LABEL for='phone' ACCESSKEY='5' >Phone
+		</LABEL></td>
+		<td class='ftbl_row_1a'  align='left'><input type='text' name='phone' id='phone' size='45' value=''>
+		</td>
+	</tr>
+	<tr>
+		<td class='ftbl_row_2'   align='right'><b style='color:red'>*</b>Feedback Type
+		</td>
+		<td class='ftbl_row_2a' align='left'>
+			<LABEL ACCESSKEY='A'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;						
+			<input type='radio' name='fb_type' id='fb_type[0]' value='General Suggestions' checked="checked">Gener<u>a</u>l Suggestions</LABEL><BR />
+			<LABEL ACCESSKEY='B'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type='radio' name='fb_type' id='fb_type[1]' value='Appreciation'>Appreciation</LABEL><BR />
+			<LABEL ACCESSKEY='C'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type='radio' name='fb_type' id='fb_type[2]' value='Bug / Error Report'>Bug / Error Report</LABEL><BR />
+			<LABEL ACCESSKEY='D'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input type='radio' name='fb_type' id='fb_type[3]' value='Purchase Requirement'>Purchase Requirement</LABEL><BR />
+			<LABEL ACCESSKEY='E'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type='radio' name='fb_type' id='fb_type[4]' value='Complaint'>Complaint</LABEL><BR />
+			<LABEL ACCESSKEY='F'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+			<input type='radio' name='fb_type' id='fb_type[5]' value='Interested in Services'>Interested in Services</LABEL>
+		</td>
+	</tr>
+		<td class='ftbl_row_1'  valign='top'  align='right'><LABEL for='feedback' ACCESSKEY='6' ><b style='color:red'>*</b>Feedback
+		</LABEL></td>
+		<td class='ftbl_row_1a'><textarea name='feedback' id='feedback' cols='45' rows='6' value=''></textarea>
+		</td>
+	</tr>
+	<tr>
+		<td colspan='2' align='center'><input type='submit' name='submit' value='Submit'>&nbsp;<input type='reset' name='reset' value='Reset'>
+<br /><FONT COLOR="RED">*</FONT> <FONT SIZE="1">represents
+        compulsory fields</FONT>		
+		</td>
+	</tr>
+</table>
+</form>
+</DIV>
+<div id="footer"></div>
+</body>
+</html>
