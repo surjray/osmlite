@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>Change Address: OSMlite.com</title>
+<script language="JavaScript">
+
+function myMethod()
+{
+  document.getElementById("section1").style.visibility="hidden";
+  document.getElementById("section2").style.visibility="hidden";
+  document.changeAddress.uid.focus();
+}
+
+function validate()
+{
+  var u_id = document.changeAddress.uid.value;
+  var adrss1 = document.changeAddress.addrss1.value;
+  var adrss2 = document.changeAddress.addrss2.value;
+  var pin1 = document.changeAddress.pno1.value;
+
+
+  if(u_id == "")
+  {
+    alert("Please enter your E-Bazzar userid")
+    return false
+  }
+  if(adrss1 == "")
+  {
+    alert("Please enter your current address")
+    return false
+  }
+  if(pin1 == "")
+  {
+    alert("Please enter your current pin number")
+    return false
+  }
+  if(adrss2 == "")
+  {
+    document.getElementById("section1").style.visibility="visible";
+    alert("Please enter your new address")
+    return false
+  }
+
+return true
+
+}
+
+function check1()
+{
+  var adrss2 = document.changeAddress.addrss2.value;
+
+  if(adrss2 == "")
+  {
+    document.getElementById("section1").style.visibility="visible";
+    alert("Please enter your new address")
+  }
+  else
+  {
+    document.getElementById("section1").style.visibility="hidden";
+  }
+
+}
+
+function check2()
+{
+  var pin2 = document.changeAddress.pno2.value;
+
+  if(pin2 == "")
+  {
+    document.getElementById("section2").style.visibility="visible";
+    alert("Please enter your new pin number")
+  }
+  else
+  {
+    document.getElementById("section2").style.visibility="hidden";
+  }
+}
+
+</script>
+</head>
+
+<body bgcolor="white" onLoad="myMethod();">
+<form name="changeAddress" onSubmit="return validate()" action="ChangeAddress.jsp" method="post">
+<font color="#9933CC" face="Arial, Helvetica, sans-serif">
+<center>
+<font color="#000000" face="Times New Roman, Times, serif">
+<h1><u>Change Address</u></h1>
+</font>
+</center>
+<br><hr><br>
+<b>Enter your OSMlite user-id: </b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" name="uid"><br><br>
+<b>Enter your current address: </b>&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" name="addrss1" size="30"><br><br>
+<b>Enter your current Pin code: </b>&nbsp&nbsp&nbsp&nbsp <input type="text" name="pno1"><br><br>
+<b>Enter your new address: </b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" name="addrss2" size="30" onBlur="check1()"><br>
+
+<font color="red">
+<div id="section1"><b>This field can not be left blank.</b></div>
+</font>
+
+<b>Enter your new Pin code: </b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" name="pno2" onBlur="check2()"><br>
+<font color="red">
+<div id="section2"><b>This field can not be left blank.</b></div>
+</font>
+<br><hr><br>
+<input type="submit" name="sub" value="Change Address"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="reset" name="clr" value="Clear" onClick="myMethod()"><br><br><hr>
+</font>
+</form>
+</body>
+</html>

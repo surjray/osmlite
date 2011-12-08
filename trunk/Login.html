@@ -1,0 +1,160 @@
+<html>
+<head>
+<title>The Login Page: OSMlite.com</title>
+<script language="JavaScript">
+
+function myMethod()
+{
+  document.getElementById("section1").style.visibility="hidden";
+  document.getElementById("section2").style.visibility="hidden";
+  document.login.uid.focus();
+}
+
+function validate()
+{
+  var u_id = document.login.uid.value;
+  var pwd = document.login.password.value;
+
+  if(u_id == "")
+  {
+    return false
+  }
+  if(pwd == "")
+  {
+    return false
+  }
+  return true
+}
+
+function check1()
+{
+  var u_id = document.login.uid.value;
+
+  if(u_id == "")
+  {
+    document.getElementById("section1").style.visibility="visible";
+
+  }
+  else
+    document.getElementById("section1").style.visibility="hidden";
+}
+
+function check2()
+{
+  var pwd = document.login.password.value;
+
+  if(pwd == "")
+  {
+    document.getElementById("section2").style.visibility="visible";
+
+  }
+  else
+    document.getElementById("section2").style.visibility="hidden";
+}
+
+</script>
+</head>
+<center><body bgcolor="white" onLoad="myMethod();">
+<form name="login" onSubmit="return validate()" method="POST" action="Login.jsp">
+<font color="#9933CC" face="Arial, Helvetica, sans-serif">
+<!--<table border="0" align="left">
+<tr>
+<td rowspan="3">
+<img src="osm_logo.png" border="0" align="left" width="110" height="110" />
+</td>
+<td>&nbsp;
+
+</td>
+<td>&nbsp;</td>
+
+<td>&nbsp;
+
+</td>
+</tr>
+<tr>
+<td>
+<font face="Times New Roman, Times, serif" color="#000000">
+<h2>Welcome! to OSMlite.com</h2>
+</font>
+</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+
+</tr>
+<tr>
+<td>
+<font face="Times New Roman, Times, serif" color="#000000">
+<b> [ </b> <a href="registration.html"><b> Register</b></a> <b>]</b>
+</font>
+</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<br><br><br><br><br><br><br><hr>
+-->
+<marquee bgcolor="#CCCCCC">
+<br>
+<font color="#9933FF">
+<h1><u>The Login Page</u></h1>
+</font>
+<br>
+</marquee>
+<table border="0" align="center" width="100%" cellpadding="3" cellspacing="10">
+<TR>
+<td height="10%">
+<a href="index_dream.html">
+<img src="images/osm_logo128x128.png" height="128" width="128" align="top" title="OSMLite.com">
+</a>
+</td>
+<TD rowspan="2"><div align="justify"><font color="#6666FF">We
+		  thank you for visiting OSMlite.com - India's <b>Largest online B2C
+		  marketplace.</b><BR>
+		  <BR />
+		  Valuable feedback from our visitors has helped us to improve our site
+		  and be amongst the most visited business site of India. We look forward
+		  to your contribution in making <a href="index_dream.html" style="text-decoration:none; color:#6666FF" onMouseOver="style='text-decoration:underline; color:red'" onMouseOut="style='text-decoration:none; color:#6666FF'"><B>OSMlite.com </B></a>a better site, that can
+		  best serve your <B>buying</B> needs.<BR>
+		  <BR />
+		  Kindly type your username &amp; password to <b>Login</b> and purchase products of your choice from our huge catalog.
+		 </font> </div></TD>
+<td rowspan="2">&nbsp;</td>
+<td align="center" width="40%" height="90%" rowspan="2">
+<fieldset>
+<legend><font color="#9933CC" size="5"><b>Login</b></font></legend>
+<br><br><br>
+<b>User-id:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type=text name="uid" onBlur="check1()"><br>
+<font color="red">
+<div id="section1"><b>This field can not be left blank!</b></div>
+</font>
+
+<b>Password:</b>&nbsp&nbsp <input type=password name="password" onBlur="check2()">
+<br>
+<font color="red">
+<div id="section2"><b>This field can not be left blank!</b></div>
+</font>
+<br>
+<input type=submit value="Login" name="login">
+<br><br><br>
+</fieldset>
+</td>
+</TR>
+<tr>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td align="center" colspan="4">
+<a href="index_dream.html" style="color:#CC6600" onMouseOver="style='text-decoration:underline; color:#FF6600; font-style:italic'" onMouseOut="style='text-decoration:none; color:#CC6600'"><b>Home</b></a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="LoginEmployee.html" style="color:#CC6600" onMouseOver="style='text-decoration:underline; color:#FF6600; font-style:italic'" onMouseOut="style='text-decoration:none; color:#CC6600'"><b>Web Master</b></a>
+</td>
+</tr>
+</table>
+<br>
+
+</font>
+</form>
+</body>
+</center>
+</html>

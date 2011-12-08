@@ -1,0 +1,110 @@
+<html>
+<head>
+<title>Change Email-id: OSMlite.com</title>
+<script language="JavaScript">
+
+function myMethod()
+{
+  document.getElementById("section1").style.visibility="hidden";
+  document.getElementById("section2").style.visibility="hidden";
+  document.getElementById("section3").style.visibility="hidden";
+  document.changeEmail.uid.focus();
+}
+
+function validate()
+{
+  var u_id = document.changeEmail.uid.value;
+  var eid1 = document.changeEmail.email1.value;
+  var eid2 = document.changeEmail.email2.value;
+
+  if(u_id == "")
+  {
+    return false
+  }
+  if(eid1 == "")
+  {
+    return false
+  }
+  if(eid2 == "")
+  {
+    return false
+  }
+
+return true
+
+}
+
+function check1()
+{
+  var u_id = document.changeEmail.uid.value;
+
+  if(u_id == "")
+  {
+    document.getElementById("section1").style.visibility="visible";
+  }
+  else
+  {
+    document.getElementById("section1").style.visibility="hidden";
+  }
+
+}
+
+function check2()
+{
+  var eid1 = document.changeEmail.email1.value;
+
+  if(eid1 == "")
+  {
+    document.getElementById("section2").style.visibility="visible";
+  }
+  else
+  {
+    document.getElementById("section2").style.visibility="hidden";
+  }
+}
+
+function check3()
+{
+  var eid2 = document.changeEmail.email2.value;
+
+  if(eid2 == "")
+  {
+    document.getElementById("section3").style.visibility="visible";
+  }
+  else
+  {
+    document.getElementById("section3").style.visibility="hidden";
+  }
+}
+
+</script>
+</head>
+
+<body bgcolor="white" onLoad="myMethod();">
+<form name="changeEmail" onSubmit="return validate()" action="ChangeEmpEmail.jsp" method="post">
+<font color="#9933CC" face="Arial, Helvetica, sans-serif">
+<center>
+<font color="#000000" face="Times New Roman, Times, serif">
+<h1><u>Change E-mail ID</u></h1>
+</font>
+</center>
+<br><hr><br>
+<b>Enter OSMlite Employee-id: </b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" name="uid" onBlur="check1()"><br>
+<font color="red">
+<div id="section1"><b>This field can not be left blank.</b></div>
+</font>
+<b>Enter current Email-id: </b>&nbsp&nbsp&nbsp&nbsp <input type="text" name="email1" size="30" onBlur="check2()"><br>
+<font color="red">
+<div id="section2"><b>This field can not be left blank.</b></div>
+</font>
+<b>Enter new Email-id: </b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" name="email2" size="30" onBlur="check3()"><br>
+<font color="red">
+<div id="section3"><b>This field can not be left blank.</b></div>
+</font>
+<br><hr><br>
+<input type="submit" name="sub" value="Change E-mail ID"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="reset" name="clr" value="Clear" onClick="myMethod()"><br><br><hr>
+</font>
+</form>
+</body>
+</html>

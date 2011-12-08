@@ -1,0 +1,18 @@
+#infobar{
+	float: left;
+	padding: 10px;
+	background:#FFFFFF;
+}
+#infobar span{
+	float: right;
+	background:#FFCC99;
+}
+
+
+#main{
+	font: normal 12px/1.5em Verdana;
+	width: 80%;
+	margin-top: 75px;
+	margin-left: auto;
+	margin-right: auto;
+}
