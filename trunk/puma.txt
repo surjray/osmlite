@@ -1,0 +1,64 @@
+Simran: Hi suvendu. Thank you for choosing Yebhi.com, how can I help you today?
+Simran: Good Afternoon.
+Simran: How can I help you today ?
+suvendu: Hi... I want to use COD service..but it seems that you are not providing this service in my area...Checking pin code shows invalid pin...what should i do?
+Simran: I'll be glad to help you with your question.
+Simran: May I know your area pincode ?
+suvendu: 700122
+Simran: So that I can check and help you accordingly.
+Simran: Thank you for providing a pincode.
+Simran: Please give me a minute or two while I check the information for you.
+Simran: Thank you for staying online, I really appreciate your patience.
+Simran: As I have checked, cash on delivery payment option is not available at your area pincode : 700122.
+Simran: If cash on delivery service is not available at your location.
+Simran: Nevertheless, we have so many other payment options as well which you may use to make payment as per your convenience such as, Axis payment Gateway, Net banking and Cheque.
+Simran: Is there anything else I can help you with today?
+suvendu: can you explain the method of cheque
+Simran: Yes sure.
+Simran: I would request you that drop a Cheque in any local ICICI or Axis bank and please mention the order number clearly on the back side of your Cheque.
+Simran: Our account details are as follows:
+Simran: Bank : ICICIBranch : Greater Kailash - II, New DelhiAccount Holder: Shop online Trading Pvt. LtdAccount Nos : 031105002941 IFSC Code : ICIC0000311.
+Simran: Bank : AxisBranch : Okhla Phase I, New DelhiAccount Holder: Shop online Trading Pvt. Ltd Account Nos : 910020020006082IFSC Code : UTIB0001103.
+suvendu: ok, thanks
+Simran: You're Welcome.
+Simran: Hope I have resolve your query and answered all questions in proper manner.
+Simran: Please be assured, We strive to serve our customers with the best customer divine service.
+Simran: We treasure that you have replied us. You can contact us via email (support@yebhi.com), chat (Live Support), or phone (Call us 24x7 : +91-11-4728 3111) and our customer representative will be felicitous to assist you.
+Simran: Thank you for contacting Yebhi.com online Customer support. Have a nice day. “Customer First, Second, Third !”
+Notice: Simran exited session.
+
+
+
+Your order has been placed!
+
+Please deposit Cheque/Demand Draft in favour Shop online Trading Pvt. Ltd at your nearest Axis Bank Branch or ICICI Bank Branch. You can also use your Internet Banking Account to transfer the order amount in our account. The account details are as follows
+
+Bank Name: Axis Bank
+Account Holder: Shop online Trading Pvt. Ltd
+Account Number: 910020020006082
+Branch: Okhla Phase I, New Delhi
+IFSC Code: UTIB0001103
+	Bank Name: ICICI Bank
+Account Holder: Shop online Trading Pvt. Ltd
+Account Number: 031105002941
+Branch: GK II, New Delhi
+IFSC Code: ICIC0000311
+
+Once you have tranfered the order amount, please write a mail to support@yebhi.com with your payment details
+
+ 
+Your Order Details
+Order Item 	Status
+	Order Details
+
+Code: 6812801
+Size: As Shown
+Unit price: 849.00
+Shipping: 0.00
+COD: 0.00
+	Un-Verified
+	Order Number: YBH726308
+Order Value: INR 849.00
+Date: 10/26/2011 1:06:09 PM
+Payment Mode: Cheque/ Cash in Bank
+Payment Status: Awaiting Payment Details 
