@@ -1,0 +1,33 @@
+Apparels
+Shipping Details:
+
+The Seller will ship this product. Usually ships in 4 working days.
+Shipping Charges Extra 
+Applicable Octroi charges will be paid by the consignee. 
+Payment methods accepted:
+
+Credit Card : VISA | Master Card | American Express | Citibank Diner 
+Cheque. 
+Net Banking : ICICIBank.com | HDFC Bank Direct Pay | Federal Bank - FedNet | ITZ Cash | AXIS Bank(formerly UTI Bank) 
+Cash on Delivery - COD
+Books
+	Name
+	Writer
+	Publisher
+	Edition
+	Pages
+	ISBN
+	About the Book
+	About the Writer
+
+Shipping Details for "XYZ"
+
+The Seller will ship the Book - "XYZ" in 1 working days. 
+Shipping Charges - Rs. 30 
+Applicable Octroi charges will be paid by the consignee.
+
+Payment methods accepted:
+EMI: 3 Easy Monthly Installments (Available on CITI Bank and ICICI Bank Credit Card Only)
+Credit Card: VISA | Master Card | American Express | Citibank Diner 
+Cheque. 
+Net Banking: ICICIBank.com | HDFC Bank Direct Pay | Federal Bank - FedNet | ITZ Cash                         AXIS Bank (formerly UTI Bank)
