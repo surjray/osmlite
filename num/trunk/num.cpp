@@ -3,8 +3,8 @@
 
 #include "stdafx.h"
 
-#define MAX_LENGTH 5 //Must be an odd number
-#define MAX_VALUE 1000
+#define MAX_LENGTH 7 //Must be an odd number
+#define MAX_VALUE 100
 
 enum type{LP = 10,RP = 20,OPERAND = 30,OPERATOR = 40};
 enum precedence{LPP = 0,AP = 1,SP = AP,MP = 2,DP = MP,REMP = 2,NONE = 9};
