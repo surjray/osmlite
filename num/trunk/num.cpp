@@ -181,6 +181,13 @@ precedence getprec(char sym)
 	default :
 		return NONE;
 	}
+	switch(sym)
+	{
+	case 1:
+		break;
+	case 2:
+		break;
+	}
 }
 
 void printfx(token* tok)
