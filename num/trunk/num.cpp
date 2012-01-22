@@ -162,6 +162,8 @@ token pop()
 	}
 	else
 		return stack[top--];
+	    printf(" SUVENDU ",tok[i].val.sym);
+
 }
 
 precedence getprec(char sym)
@@ -209,4 +211,6 @@ void printfx(token* tok)
             printf(" %c ",tok[i].val.sym);
 		    break;
     }
+    printf(" SUVENDU ",tok[i].val.sym);
+
 }
