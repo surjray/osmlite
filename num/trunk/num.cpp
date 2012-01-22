@@ -181,6 +181,10 @@ precedence getprec(char sym)
 	default :
 		return NONE;
 	}
+	for(int i = 0;i < MAX_LENGTH;i++)
+	{
+		printf(" %.0f ",tok[i].val.num);
+	}
 	switch(sym)
 	{
 	case 1:
