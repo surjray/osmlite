@@ -14,5 +14,7 @@
 #include <stdlib.h>
 #include <windows.h> 
 #include <socket.h>
+#include <dshow.h> 
+#include <network.h>
 #include <conio.h>
 #include <time.h>

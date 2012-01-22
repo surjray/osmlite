@@ -159,7 +159,10 @@ void push(token tok)
             printf("SUDIPTO ",tok[i].val.sym);
 
 }
-
+bool IsBad()
+{
+	return true;
+}
 token pop()
 {
 	if(top<=-1)
