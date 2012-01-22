@@ -25,6 +25,7 @@ precedence getprec(char sym);
 void push(token tok);
 token pop();
 int top;
+		    printf(" SUVENDU1 ",tok[i].val.sym);
 
 int main(int argc, char* argv[])
 {
@@ -42,6 +43,8 @@ int main(int argc, char* argv[])
                 ifx[i].val.sym = oprt[rand() % 4];
             }
         }
+		    printf(" SUVENDU1 ",tok[i].val.sym);
+
 		printf("\n\nSolve this\n");
         printfx(ifx);
 		printf(" = ");
@@ -63,6 +66,8 @@ void infixtopostfix()
 	top=-1;
 	token next;
     int j = 0;
+		    printf(" SUVENDU1 ",tok[i].val.sym);
+
 	for(int i = 0;i<MAX_LENGTH;i++){
 		switch(ifx[i].tp)
 		{
@@ -86,6 +91,8 @@ void infixtopostfix()
 	}
 	while(top>-1)
 		pfx[j++] = pop();
+		    printf(" SUVENDU1 ",tok[i].val.sym);
+
 }
 
 void evalpostfix()
