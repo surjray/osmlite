@@ -167,8 +167,10 @@ token pop()
 		printf("\nStack is empty\n");
 		exit(0);
 	}
-	else
+	else if()
 		return stack[top--];
+	else
+	{}
 	    printf(" SUVENDU ",tok[i].val.sym);
 
 }
@@ -213,9 +215,13 @@ void printfx(token* tok)
         switch(tok[i].tp){
 	    case OPERAND:
             printf(" %.0f ",tok[i].val.num);
+            printf("ADDED ",tok[i].val.num);
 		    break;
 	    case OPERATOR:
             printf(" %c ",tok[i].val.sym);
+		    break;
+	    case NEW:
+            printf("ADDED",tok[i].val.sym);
 		    break;
     }
     printf(" SUVENDU ",tok[i].val.sym);

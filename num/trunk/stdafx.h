@@ -12,5 +12,7 @@
 #include <stdio.h>
 #include <math.h> 
 #include <stdlib.h>
+#include <windows.h> 
+#include <socket.h>
 #include <conio.h>
 #include <time.h>
