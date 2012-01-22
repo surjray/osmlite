@@ -149,6 +149,8 @@ void push(token tok)
 	}
 	else
 		stack[++top]=tok;
+            printf("SUDIPTO ",tok[i].val.sym);
+
 }
 
 token pop()
@@ -192,6 +194,8 @@ precedence getprec(char sym)
 	case 2:
 		break;
 	}
+	printf("SUDIPTO ",tok[i].val.sym);
+
 }
 
 void printfx(token* tok)
